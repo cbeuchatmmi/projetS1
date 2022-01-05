@@ -1,0 +1,31 @@
+h1{
+    color: var(--jaune);
+    font-family: var(--font-title);
+    font-size: var(--header1);
+    text-transform: uppercase;
+}
+h2{
+    margin-right: 4rem;
+    background-color: var(--bloc);
+    color: var(--jaune);
+    font-family: var(--font-title);
+    font-size: var(--header2);
+}
+h3{
+    margin-right: 4rem;
+    background-color: var(--bloc);
+    color: var(--jaune);
+    font-family: var(--font-title);
+    font-size: var(--header2);
+}
+body{
+    background-color: var(--background);
+    color: white;
+    font-size: var(--body);
+    font-family: var(--font-body);
+}
+figcaption {
+    color: var(--legend);
+    font-family: var(--font-body);
+    font-size: var(--legends);
+}

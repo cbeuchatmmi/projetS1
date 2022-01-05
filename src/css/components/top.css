@@ -1,0 +1,26 @@
+.top {
+    background-color: var(--background);
+    height: 100%;
+}
+.top__backgroung {
+
+}
+.top__intro {
+    background-color: gray;
+    padding: 1rem;
+    margin: 2rem;
+    position: absolute;
+    top: 10rem;
+
+}
+.top__title {
+    text-align: center;
+}
+.top__text {
+    text-align: center;
+}
+.top__chevron {
+ position: absolute;
+ top: 40rem;
+ left: 7.5rem;
+}

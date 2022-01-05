@@ -9,13 +9,13 @@
 /* base size: r-e-m (16px) */
 --menu: 1.38rem;
 --button: 1.88rem;
---legend: 0.81rem;
+--legends: 0.81rem;
 --body: 1.12rem;
 --footer: 1.12rem;
 --footer-body: 0.88rem;
---header3: 1.5rem;
---header2: 1.88rem;
---r-e-m: 1rem;
+--header2: 1.5rem;
+--header1: 1.875rem;
+--rem: 1rem;
 
 /*font*/
 --font-title:'Black Ops One',sans-serif;

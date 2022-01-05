@@ -5,24 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autres Prokets</title>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Batcarbone</h1>
-        <div>
-            <a href="/">
-                <img src="/public/img/logoo.svg" alt="Logo Batcarbone">
-            </a>
-        </div>
-        <span class="menu-btn__bar"></span>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Batcarbone</a></li>
-                <li><a href="Batman.html">Batman, le justicier anti-écologie</a></li>
-                <li><a href="argent.html">L'argent mène à la pollution</a></li>
-                <li><a href="energie.html">Créer sa propre énergie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="apropos.html">à propos</a></li>
+    <header class="header">
+        <h1 class="header__title">Batcarbone</h1>
+        <a class="header__logo" href="/"><img src="/public/img/logoo.svg" alt="Logo Batcarbone"></a>
+        <button class="header__menu-btn menu-btn">
+            <span class="menu-btn__bar"></span>
+        </button>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="/index.html">Batcarbone</a></li>
+                <li class="menu__item"><a class="menu__link" href="Batman.html">Batman, le justicier anti-écologie</a></li>
+                <li class="menu__item"><a class="menu__link" href="argent.html">L'argent mène à la pollution</a></li>
+                <li class="menu__item"><a class="menu__link" href="energie.html">Créer sa propre énergie</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="apropos.html">à propos</a></li>
             </ul>
         </nav>
     </header>
@@ -116,15 +115,14 @@
         </div>
     </main>
 
-    <footer>
-        <h4>PierrePolJ</h4>
-        <p>Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard.</p>
-        <ul>
-            <li><a href="#"><img src="/public/img/logomminoir.svg" alt="Logo MMI"></a></li>
-            <li><a href="#"><img src="/public/img/gmail.svg" alt="Logo Gmail"></a></li>
-            <li><a href="#"><img src="/public/img/image4.svg" alt="Logo Twitter"></a></li>
-            <li><a href="#"><img src="/public/img/Logo-facebook-négatif.svg" alt="Logo Facebook"></a></li>
-        </ul>
+    <footer class="footer">
+        <h4 class="footer__title">PierrePolJ</h4>
+        <a class="footer__mmi" href="#"><img src="/public/img/logomminoir.svg" alt="Logo MMI"></a>
+        <a class="footer__gmail" href="#"><img src="/public/img/gmail.svg" alt="Logo Gmail"></a>
+        <a class="footer__twitt" href="#"><img src="/public/img/image4.svg" alt="Logo Twitter"></a>
+        <a class="footer__face" href="#"><img src="/public/img/Logo-facebook-négatif.svg" alt="Logo Facebook"></a>
+        <p class="footer__text">Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard.</p>
+
     </footer>
     
 </body>

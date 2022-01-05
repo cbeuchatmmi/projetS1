@@ -6,7 +6,8 @@
 
 }
 .top__intro {
-    background-color: gray;
+    background-color: rgba(60, 60, 60, 0.5);
+
     padding: 1rem;
     margin: 2rem;
     position: absolute;

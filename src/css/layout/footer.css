@@ -1,0 +1,35 @@
+.footer {
+    background-color: var(--bloc);
+    position: relative;
+
+
+}
+.footer__title {
+    margin-left: 1rem;
+   padding-top: 2rem;
+}
+.footer__text {
+    margin-left: 2rem;
+}
+.footer__mmi {
+    position: absolute;
+    top: 0rem;
+    left: 8rem;
+}
+.footer__gmail {
+    position: absolute;
+    top: 1rem;
+    left: 12rem;
+}
+
+.footer__twitt {
+    position: absolute;
+    top: 1rem;
+    left: 15rem;
+}
+
+.footer__face {
+    position: absolute;
+    top: 1rem;
+    left: 18rem;
+}

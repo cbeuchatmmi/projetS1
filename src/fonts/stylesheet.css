@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Black Ops One';
+    src: url('subset-BlackOpsOne-Regular.woff2') format('woff2'),
+        url('subset-BlackOpsOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Komika Text';
+    src: url('subset-KomikaText.woff2') format('woff2'),
+        url('subset-KomikaText.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

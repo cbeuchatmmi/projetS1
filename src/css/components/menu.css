@@ -1,0 +1,68 @@
+.menu {
+    visibility: hidden;
+    background-color: var(--bloc);
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.menu__list {
+    list-style: none;
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+}
+
+.menu__item {
+    padding-bottom: 2rem;
+}
+.menu__link {
+    text-decoration: none;
+    color: var(--jaune);
+    font-size: var(--menu);
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    text-align: center;
+    
+    background-color: var(--background);
+    display: block;
+    width: 17rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+
+}
+
+
+
+
+.menu-btn {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    top: 1rem;
+    left: 20rem;
+    width: 30px;  
+}
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    
+    content: '';
+    background: var(--jaune);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+}
+.menu-btn__bar::before {
+    top: 0.5rem;
+  }
+  
+  .menu-btn__bar::after {
+    top: -0.5rem;
+  }
+

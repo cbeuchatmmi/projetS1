@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman, le justicier anti-écologie</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonction.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -28,8 +31,8 @@
 
     <main class="hero">
         <article class="hero__intro intro">
-            <h2 class="hero__title">Batman, le justicier anti-écologie</h2>
-            <p class="hero__text">Le justicier masqué est incroyable en mission. Mais la pollution qu'il dégage aussi l'est ! Découvrez le Bilan Carbone de Batman.</p>
+            <h2 class="intro__title">Batman, le justicier anti-écologie</h2>
+            <p class="intro__text">Le justicier masqué est incroyable en mission. Mais la pollution qu'il dégage aussi l'est ! Découvrez le Bilan Carbone de Batman.</p>
             <figure class="intro__figure figure">
                 <img class="figure__img" src="/public/img/fondarticle12.jpg" alt="affiche film Batman rises">
                 <figcaption class="figure__legend">Extrait de l'affiche du film Batman The Dark Knight Rises <br>Source : Amazon</figcaption>
@@ -48,18 +51,20 @@
                 <img class="figure__img" src="/public/img/batarang.jpg" alt="Réplique d'un Batarang par Quantum Mechanics">
                 <figcaption class="figure__legend">Réplique d'un Batarang par Quantum Mechanics <br>Source : Zavvi</figcaption>
             </figure>
+        </div>
         <div class="hero__gadget gadget">    
-        <p class="gadget__list">Et les autres gadgets : <br>Le Bat-Grappin : Énergie Pneumatique donc gazs <br>Le Bat-Griffe : Énergie Pneumatique donc gazs <br>Le Fusil : Onde électromagnétique très forte permettant d'arrêter ou détruire toute machine électrique (environ égal à 10 tazers)</p>
-        <figure class="gadget__figure figure">
-            <img class="figure__img" src="/public/img/batgrappin.jpg" alt="Réplique du pistolet grappin de Batman">
-            <figcaption class="figure__legend">Réplique du pistolet grappin de Batman <br>Source : DC Comics</figcaption>
-        </figure>
-        <p class="gadget_text">La Batbombe : Explosif très puissant donc gazs <br>Gel explosif : Explose donc émet des gazs <br>Tyrolienne : Énergie pneumatique <br>Ajoutons encore sa batmobile. Il l'utilise à toutes ses missions et consomme autant que trois 4x4 Cadillac.</p>
+            <p class="gadget__list">Et les autres gadgets : <br>Le Bat-Grappin : Énergie Pneumatique donc gazs <br>Le Bat-Griffe : Énergie Pneumatique donc gazs <br>Le Fusil : Onde électromagnétique très forte permettant d'arrêter ou détruire toute machine électrique (environ égal à 10 tazers)</p>
+            <figure class="gadget__figure figure">
+                <img class="figure__img" src="/public/img/batgrappin.jpg" alt="Réplique du pistolet grappin de Batman">
+                <figcaption class="figure__legend">Réplique du pistolet grappin de Batman <br>Source : DC Comics</figcaption>
+            </figure>
+            <p class="gadget_text">La Batbombe : Explosif très puissant donc gazs <br>Gel explosif : Explose donc émet des gazs <br>Tyrolienne : Énergie pneumatique <br>Ajoutons encore sa batmobile. Il l'utilise à toutes ses missions et consomme autant que trois 4x4 Cadillac.</p>
         </div>
         <div class="hero__conso conso">
             <h3 class="conso__title">Une consommation incroyable</h3>
             <p class="conso__text">En imaginant une moyenne par mission d'environ : 2 batarang explosifs, 3 électriques, 1 télécommandé et 1 sonique, 1 utilisation de la tyrolienne, 1 de son grappin et 1 de sa griffe, 1 bat bombe, 1 balle fumigènes, 1 utilisation du fusil toutes les deux missions et 20km de Batmobile. On peut calculer une pollution créée par mission d’environ 1 aller-retour Paris New York.</p>
             <p>Avec deux missions par semaine, Batman crée donc la pollution de 52 allers-retours Paris New York.</p>
+        </div>    
         <div class="hero__batcave batcave">
             <h3 class="batcave__title">La BatCave</h3>
             <p class="batcave__intro">Mais ce n’est pas tout. Batman consomme certes dans ses missions mais il ne faut pas oublier sa batcave. En plus de rester allumée celle-ci consomme autant que tout un quartier américain.</p>
@@ -76,7 +81,7 @@
                 <img class="figure__img" src="/public/img/Image3.jpg" alt="Réplique d'un Batarang par Quantum Mechanics">
                 <figcaption class="figure__legend">Usine de recyclage de Co2 <br>Source : Sciences et Avenir</figcaption>
             </figure>
-        <p class="dark__concl">Au total Batman relâche donc 207,5 tonnes de Co2 par an. Batman pollue autant en un an que le chauffage de 104 logements pendant la même durée. <br>Ce chiffre est énorme et montre que tous ces gadgets ne sont pas inoffensifs...</p>
+            <p class="dark__concl">Au total Batman relâche donc 207,5 tonnes de Co2 par an. Batman pollue autant en un an que le chauffage de 104 logements pendant la même durée. <br>Ce chiffre est énorme et montre que tous ces gadgets ne sont pas inoffensifs...</p>
         </div>
         <div class="hero__card card">
             <h3 class="card__title">L'argent mène à la pollution</h3>
@@ -84,27 +89,24 @@
             <p class="card__text">Notre consommation électrique et la pollution qu'on crée augmente de plus en plus. Comment peut-on réduire tout ça ?</p>
             <a class="card__btn" href="argent.html">Lire la suite !</a>
         </div>
-        <div>
-			<div>
-				<h3>La liste des films de Batman</h3>
-                <p>Toutes les images sont cliquables et vous emmène sur la page Allociné du film !</p>
+        
+    	<h3>La liste des films de Batman</h3>
+        <p>Toutes les images sont cliquables et vous emmène sur la page Allociné du film !</p>
+		<div class="droite15">&nbsp;</div>
+		<div class="carrousel8">
+				<div class="carroussel158">
+				<img id="img1" class="image158" src="/public/img/affiche1.jpg"/>
+				<img id="img2" class="image158" src="/public/img/affiche2.jpg"/>
+				<img id="img3" class="image158" src="/public/img/affiche3.jpg"/>
+				<img id="img4" class="image158" src="/public/img/affiche4.jpg"/>
+                <img id="img5" class="image158" src="/public/img/affiche5.jpg"/>
+				<img id="img6" class="image158" src="/public/img/affiche6.jpg"/>
+				<img id="img7" class="image158" src="/public/img/affiche7.jpg"/>
+	    		<img id="img8" class="image158" src="/public/img/affiche2021.jpg"/>
 			</div>
-			<div>&nbsp;</div>
-			<div>
-				<div>
-					<img src="/public/img/affiche1.jpg"/>
-					<img src="/public/img/affiche2.jpg"/>
-					<img src="/public/img/affiche3.jpg"/>
-					<img src="/public/img/affiche4.jpg"/>
-                    <img src="/public/img/affiche5.jpg"/>
-					<img src="/public/img/affiche6.jpg"/>
-					<img src="/public/img/affiche7.jpg"/>
-					<img src="/public/img/affiche2021.jpg"/>
-				</div>
-			</div>
+            
 		</div>
-    </main>
-
+    </main>    
     <footer class="footer">
         <h4 class="footer__title">PierrePolJ</h4>
         <a class="footer__mmi" href="#"><img src="/public/img/logomminoir.svg" alt="Logo MMI"></a>
@@ -112,7 +114,7 @@
         <a class="footer__twitt" href="#"><img src="/public/img/image4.svg" alt="Logo Twitter"></a>
         <a class="footer__face" href="#"><img src="/public/img/Logo-facebook-négatif.svg" alt="Logo Facebook"></a>
         <p class="footer__text">Projet réalisé dans le cadre d'un exercice pédagogique au département MMI de Montbéliard.</p>
-
+        <script>carrousel8Images();</script>
     </footer>
     
 </body>

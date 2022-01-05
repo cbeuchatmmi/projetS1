@@ -1,0 +1,6 @@
+.intro__title {
+    margin-top: 6rem;
+}
+.hero--dark {
+    background-color: var(--bloc);
+}

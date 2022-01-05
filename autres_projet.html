@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autres Prokets</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" :class="{ 'header--atTop' : !atTop }">
         <h1 class="header__title">Batcarbone</h1>
         <a class="header__logo" href="/"><img src="/public/img/logoo.svg" alt="Logo Batcarbone"></a>
-        <button class="header__menu-btn menu-btn">
-            <span class="menu-btn__bar"></span>
-        </button>
-        <nav class="header__menu menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="/index.html">Batcarbone</a></li>
-                <li class="menu__item"><a class="menu__link" href="Batman.html">Batman, le justicier anti-écologie</a></li>
-                <li class="menu__item"><a class="menu__link" href="argent.html">L'argent mène à la pollution</a></li>
-                <li class="menu__item"><a class="menu__link" href="energie.html">Créer sa propre énergie</a></li>
-                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
-                <li class="menu__item"><a class="menu__link" href="apropos.html">à propos</a></li>
-            </ul>
-        </nav>
+        <div class="header__end" x-data="{ searchIsOpen: false }">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/index.html">Batcarbone</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Batman.html">Batman, le justicier anti-écologie</a></li>
+                    <li class="menu__item"><a class="menu__link" href="argent.html">L'argent mène à la pollution</a></li>
+                    <li class="menu__item"><a class="menu__link" href="energie.html">Créer sa propre énergie</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="apropos.html">à propos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>

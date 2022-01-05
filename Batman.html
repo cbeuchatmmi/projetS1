@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'"></html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +8,29 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script src="https://animejs.com/lib/anime.min.js"></script>
     <script src="src/js/fonction.js"></script>
-    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" :class="{ 'header--atTop' : !atTop }">
         <h1 class="header__title">Batcarbone</h1>
         <a class="header__logo" href="/"><img src="/public/img/logoo.svg" alt="Logo Batcarbone"></a>
-        <button class="header__menu-btn menu-btn">
-            <span class="menu-btn__bar"></span>
-        </button>
-        <nav class="header__menu menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="/index.html">Batcarbone</a></li>
-                <li class="menu__item"><a class="menu__link" href="Batman.html">Batman, le justicier anti-écologie</a></li>
-                <li class="menu__item"><a class="menu__link" href="argent.html">L'argent mène à la pollution</a></li>
-                <li class="menu__item"><a class="menu__link" href="energie.html">Créer sa propre énergie</a></li>
-                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
-                <li class="menu__item"><a class="menu__link" href="apropos.html">à propos</a></li>
-            </ul>
-        </nav>
+        <div class="header__end" x-data="{ searchIsOpen: false }">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="/index.html">Batcarbone</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Batman.html">Batman, le justicier anti-écologie</a></li>
+                    <li class="menu__item"><a class="menu__link" href="argent.html">L'argent mène à la pollution</a></li>
+                    <li class="menu__item"><a class="menu__link" href="energie.html">Créer sa propre énergie</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="apropos.html">à propos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="hero">
@@ -39,7 +43,10 @@
             </figure>
             <p class="intro__text">Nous connaissons tous Batman. Nous avons l’habitude de le suivre dans ses périples. Le voir manipuler toutes sortes de gadgets et véhicules. Nous nous sommes déjà tous demandé combien tout ça coûtait. Mais nous nous sommes jamais demandé combien tout ça consommait !</p>
             <figure class="intro__figure figure">
-                <img class="figure__img" src="/public/img/batmobile.jpg" alt="Batmobile du jeu Arkham Original">
+                <div class="image image13" 
+                x-on:mouseclick = "monterLegende();"
+                x-on:mouseleave = "descendreLegende();">
+                <img class="figure__img" src="/public/img/batmobile.jpg" alt="Batmobile du jeu Arkham Original"></div>
                 <figcaption class="figure__legend">Affiche du jeu Batmobile : Arkham Original <br>Source : Microsoft</figcaption>
             </figure>
             <p class="intro__question">Comment répondre à cette question ? Il faut d’abord faire le bilan de tous les gadgets et activités du Justicier. <br> Commençons par les gadgets.</p>
